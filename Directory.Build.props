@@ -15,20 +15,20 @@
         <RepositoryUrl>https://github.com/aldelaro5/BugFables.GameLibs.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <DevelopmentDependency>true</DevelopmentDependency>
         <PackageIcon>icon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <NoWarn>NU5131</NoWarn>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(TargetFrameworks)' == 'net35;net472'">
-        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="lib/net35" Visible="false" />
-        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="lib/net35" />
-        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="lib/net472" Visible="false" />
-        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="lib/net472" />
+        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="ref/net35" Visible="false" />
+        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="ref/net35" />
+        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="ref/net472" Visible="false" />
+        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="ref/net472" />
     </ItemGroup>
     <ItemGroup Condition="'$(TargetFramework)' == 'net472' And '$(TargetFrameworks)' == ''">
-        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="lib/net472" Visible="false" />
-        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="lib/net472" />
+        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="ref/net472" Visible="false" />
+        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="ref/net472" />
     </ItemGroup>
     <ItemGroup>
         <None Include="$(SolutionDir)/PackageData/icon.png" Pack="true" PackagePath="/"/>
