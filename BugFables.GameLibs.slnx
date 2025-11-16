@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/PackageData/">
+    <File Path="PackageData\icon.png" />
+    <File Path="PackageData\README.md" />
+  </Folder>
+  <Project Path="BugFables.GameLibs.100.0\BugFables.GameLibs.100.0.csproj" />
+  <Project Path="BugFables.GameLibs.101.0\BugFables.GameLibs.101.0.csproj" />
+  <Project Path="BugFables.GameLibs.102.0\BugFables.GameLibs.102.0.csproj" />
+  <Project Path="BugFables.GameLibs.103.0\BugFables.GameLibs.103.0.csproj" />
+  <Project Path="BugFables.GameLibs.103.1\BugFables.GameLibs.103.1.csproj" />
+  <Project Path="BugFables.GameLibs.103.2\BugFables.GameLibs.103.2.csproj" />
+  <Project Path="BugFables.GameLibs.103.3\BugFables.GameLibs.103.3.csproj" />
+  <Project Path="BugFables.GameLibs.103.4\BugFables.GameLibs.103.4.csproj" />
+  <Project Path="BugFables.GameLibs.103.5\BugFables.GameLibs.103.5.csproj" />
+  <Project Path="BugFables.GameLibs.104.0\BugFables.GameLibs.104.0.csproj" />
+  <Project Path="BugFables.GameLibs.104.1\BugFables.GameLibs.104.1.csproj" />
+  <Project Path="BugFables.GameLibs.105.0\BugFables.GameLibs.105.0.csproj" />
+  <Project Path="BugFables.GameLibs.105.1\BugFables.GameLibs.105.1.csproj" />
+  <Project Path="BugFables.GameLibs.110.0\BugFables.GameLibs.110.0.csproj" />
+  <Project Path="BugFables.GameLibs.111.0\BugFables.GameLibs.111.0.csproj" />
+  <Project Path="BugFables.GameLibs.112.0\BugFables.GameLibs.112.0.csproj" />
+  <Project Path="BugFables.GameLibs.113.0\BugFables.GameLibs.113.0.csproj" />
+  <Project Path="BugFables.GameLibs.113.1\BugFables.GameLibs.113.1.csproj" />
+  <Project Path="BugFables.GameLibs.120.0\BugFables.GameLibs.120.0.csproj" />
+</Solution>

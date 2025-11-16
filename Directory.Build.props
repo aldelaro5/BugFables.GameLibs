@@ -1,0 +1,33 @@
+<Project>
+    <PropertyGroup>
+        <OutputPath>$(SolutionDir)/Output</OutputPath>
+        <IsPackable>true</IsPackable>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>BugFables.GameLibs</PackageId>
+        <Title>Bug Fables Game Libraries</Title>
+        <PackageDescription>Publicized UnityEngine assemblies and publicised + stripped game assemblies of the game Bug Fables for use in compiling mods for the game. See the README for details on the version to choose.</PackageDescription>
+        <Authors>aldelaro5</Authors>
+        <Company>aldelaro5</Company>
+        <Product>BugFables.GameLibs</Product>
+        <PackageTags>Bug Fables;Unity game modding</PackageTags>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFrameworks)' == 'net35;net472'">
+        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="lib/net35" Visible="false" />
+        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="lib/net35" />
+        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="lib/net472" Visible="false" />
+        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="lib/net472" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)' == 'net472' And '$(TargetFrameworks)' == ''">
+        <Content Include="$(SolutionDir)/UnityEngine/*.dll" Pack="true" PackagePath="lib/net472" Visible="false" />
+        <Content Include="Assembly-CSharp.dll" Pack="true" PackagePath="lib/net472" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="$(SolutionDir)/PackageData/icon.png" Pack="true" PackagePath="/"/>
+        <None Include="$(SolutionDir)/PackageData/README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+</Project>
