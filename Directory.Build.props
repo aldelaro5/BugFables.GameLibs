@@ -6,11 +6,15 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>BugFables.GameLibs</PackageId>
         <Title>Bug Fables Game Libraries</Title>
-        <PackageDescription>Publicized UnityEngine assemblies and publicised + stripped game assemblies of the game Bug Fables for use in compiling mods for the game. See the README for details on the version to choose.</PackageDescription>
+        <PackageDescription>Publicized UnityEngine assemblies and publicised + stripped game assemblies of the game Bug Fables for use in compiling mods for the game. See the README on the package's NuGet's page for details on the version to choose.</PackageDescription>
         <Authors>aldelaro5</Authors>
         <Company>aldelaro5</Company>
         <Product>BugFables.GameLibs</Product>
-        <PackageTags>Bug Fables;Unity game modding</PackageTags>
+        <PackageTags>BugFables;Unity;GameModding</PackageTags>
+        <PackageProjectUrl>https://github.com/aldelaro5/BugFables.GameLibs</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/aldelaro5/BugFables.GameLibs.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <DevelopmentDependency>true</DevelopmentDependency>
         <PackageIcon>icon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
